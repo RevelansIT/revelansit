@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — Revelans IT</title>
+    <meta name="description" content="Start a project with Revelans IT — tell us about your goals and timeline." />
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="logo" href="index.html">Revelans IT</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+        <nav id="primary-nav" class="site-nav" aria-label="Primary">
+          <a href="services.html">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="about.html">About</a>
+          <a class="button" aria-current="page" href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content" class="container">
+      <h1>Contact</h1>
+      <p>Tell us a bit about your project and we’ll get back within one business day.</p>
+      <form class="contact-form" name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" required />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" required />
+        </div>
+        <div class="field">
+          <label for="budget">Budget</label>
+          <select id="budget" name="budget">
+            <option value="">Select</option>
+            <option>Under $2k</option>
+            <option>$2k–$5k</option>
+            <option>$5k–$10k</option>
+            <option>$10k+</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+        <button class="button" type="submit">Send</button>
+      </form>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Revelans IT. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+  </body>
+  </html>

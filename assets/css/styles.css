@@ -1,0 +1,83 @@
+/* Revelans IT — Visual design system */
+:root{
+  --bg: #0b0f17;
+  --surface: rgba(255,255,255,0.06);
+  --text: #e6e9ef;
+  --muted: #a8b0c2;
+  --brand-1: #6ee7ff;
+  --brand-2: #7c3aed;
+  --accent: #22d3ee;
+  --danger: #ef4444;
+  --radius: 14px;
+  --shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font: 16px/1.6 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, Apple Color Emoji, Segoe UI Emoji;
+  color: var(--text);
+  background: radial-gradient(1200px 800px at 10% 10%, #0f172a 0%, var(--bg) 60%),
+              radial-gradient(800px 600px at 90% 20%, #0b1324 0%, transparent 60%),
+              linear-gradient(180deg, #0b0f17, #0b0f17);
+}
+
+.container{width:min(1100px, 92%); margin-inline:auto}
+
+/* Header */
+.site-header{position:sticky; top:0; z-index:10; backdrop-filter:saturate(180%) blur(8px); background:linear-gradient(180deg, rgba(10,12,20,.8), rgba(10,12,20,.5) 60%, transparent)}
+.site-header .container{display:flex; align-items:center; gap:16px; padding:18px 0}
+.logo{font-weight:800; letter-spacing:.4px; text-decoration:none; color:var(--text)}
+.site-nav{margin-left:auto; display:flex; gap:18px; align-items:center}
+.site-nav a{color:var(--muted); text-decoration:none; padding:8px 10px; border-radius:10px; transition:all .25s ease}
+.site-nav a[aria-current="page"], .site-nav a:hover{color:var(--text); background:var(--surface)}
+.nav-toggle{display:none}
+
+/* Hero */
+.hero{padding:96px 0 56px; text-align:left}
+.hero h1{font-size: clamp(34px, 6vw, 64px); line-height:1.06; margin:0 0 12px; letter-spacing:-.02em}
+.hero p{font-size: clamp(16px, 2.2vw, 20px); color:var(--muted); margin:0 0 22px}
+.hero .actions{display:flex; gap:14px; flex-wrap:wrap}
+.gradient-animated{
+  position:relative; border-radius: var(--radius); padding:56px; overflow:hidden; background:linear-gradient(120deg, rgba(34,211,238,.08), rgba(124,58,237,.08));
+}
+.gradient-animated::before{
+  content:""; position:absolute; inset:-40%; background:conic-gradient(from 0deg, var(--brand-1), var(--brand-2), #14b8a6, var(--brand-1)); filter:blur(60px); opacity:.25; animation:spin 18s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* Cards / Glass */
+.glass{background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04)); border:1px solid rgba(255,255,255,.12); box-shadow:var(--shadow); backdrop-filter: blur(10px); border-radius:var(--radius)}
+.card{padding:22px; transition: transform .25s ease, box-shadow .25s ease}
+.card:hover{transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,.45)}
+
+/* Buttons */
+.button{display:inline-block; padding:10px 16px; border-radius:12px; color:#061018; background: linear-gradient(135deg, var(--brand-1), var(--brand-2)); text-decoration:none; font-weight:700; box-shadow: var(--shadow); border:0}
+.button:hover{filter:brightness(1.05)}
+.link{color:var(--accent); text-decoration:none}
+.link:hover{text-decoration:underline}
+
+/* Layout helpers */
+.grid-3{display:grid; gap:18px; grid-template-columns:repeat(3, 1fr)}
+.portfolio-grid .thumb{height:160px; border-radius:12px; background: linear-gradient(135deg, rgba(34,211,238,.2), rgba(124,58,237,.2));}
+.tile{padding:14px}
+
+/* Forms */
+.field{display:grid; gap:6px; margin:10px 0}
+.field input, .field select, .field textarea{background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.14); color:var(--text); padding:10px 12px; border-radius:10px; outline:0}
+.contact-form .button{margin-top:8px}
+
+/* Footer */
+.site-footer{padding:40px 0; color:var(--muted)}
+
+/* Responsive */
+@media (max-width: 840px){
+  .grid-3{grid-template-columns:1fr}
+  .site-nav{display:none}
+  .nav-toggle{display:inline-flex; margin-left:auto; border:1px solid rgba(255,255,255,.14); background:var(--surface); color:var(--text); border-radius:10px; padding:8px 10px}
+  .site-header.open .site-nav{display:flex; position:absolute; top:64px; right:4%; left:4%; background:rgba(12,14,22,.95); border:1px solid rgba(255,255,255,.14); border-radius:12px; padding:10px; flex-direction:column}
+  .hero{padding:72px 0 40px}
+  .gradient-animated{padding:32px}
+}
+
