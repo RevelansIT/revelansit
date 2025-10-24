@@ -11,12 +11,13 @@
     <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
-  <body>
+  <body id="top">
     <header class="site-header">
       <div class="container">
         <a class="logo" href="index.html">Revelans IT</a>
         <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
         <nav id="primary-nav" class="site-nav" aria-label="Primary">
+          <a aria-current="page" href="index.html">Home</a>
           <a href="services.html">Services</a>
           <a href="portfolio.html">Portfolio</a>
           <a href="about.html">About</a>
@@ -35,28 +36,130 @@
         </p>
       </section>
 
-      <section class="features grid-3">
-        <article class="glass card">
-          <h2>Web Design</h2>
-          <p>Clean, modern designs tailored to your brand and audience.</p>
-        </article>
-        <article class="glass card">
-          <h2>Development</h2>
-          <p>Responsive, standards‑based, and optimized for speed and accessibility.</p>
-        </article>
-        <article class="glass card">
-          <h2>Care & SEO</h2>
-          <p>Ongoing updates, analytics, and technical SEO baked in.</p>
-        </article>
+      <section class="section">
+        <header class="section-header">
+          <p class="section-label">Trusted by teams</p>
+          <h2 class="section-title">Digital partners for ambitious brands</h2>
+          <p class="section-subtitle">From scale-ups to established companies, we collaborate with teams that value craftsmanship, data, and clear results.</p>
+        </header>
+        <ul class="logo-row">
+          <li>Northwave Security</li>
+          <li>Atlas Fintech</li>
+          <li>Bluefox Ventures</li>
+          <li>Studio Lumen</li>
+          <li>SolarIQ</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <header class="section-header">
+          <p class="section-label">What we do</p>
+          <h2 class="section-title">Full-service web design and development</h2>
+          <p class="section-subtitle">We combine strategy, design, and technology to deliver experiences that feel effortless and drive measurable growth.</p>
+        </header>
+        <div class="grid-3">
+          <article class="glass card">
+            <h3>Brand & Experience Design</h3>
+            <p>Audience research, UX flows, and interface design tailored to your goals. Every page is crafted for clarity and conversion.</p>
+          </article>
+          <article class="glass card">
+            <h3>Modern Web Development</h3>
+            <p>We build lightning-fast sites with semantic HTML, scalable CSS, and accessible interactions that work beautifully on any device.</p>
+          </article>
+          <article class="glass card">
+            <h3>Care, Analytics & SEO</h3>
+            <p>Launch is just the start. We optimise, track, and improve continuously so your site keeps winning new business.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <header class="section-header">
+          <p class="section-label">How we work</p>
+          <h2 class="section-title">A proven process built on collaboration</h2>
+          <p class="section-subtitle">Our frameworks keep projects moving swiftly while leaving room for creativity and testing.</p>
+        </header>
+        <div class="grid-2 process-grid">
+          <article class="glass card">
+            <h3>1. Discovery & Strategy</h3>
+            <p>We align with stakeholders, map user journeys, and define success metrics so everyone knows what we’re building and why.</p>
+          </article>
+          <article class="glass card">
+            <h3>2. Design Sprints</h3>
+            <p>Rapid design iterations, prototyping, and feedback loops ensure we arrive at pixel-perfect solutions before development begins.</p>
+          </article>
+          <article class="glass card">
+            <h3>3. Development & QA</h3>
+            <p>Component-driven development, rigorous testing, and accessibility audits mean your launch is smooth and future-proof.</p>
+          </article>
+          <article class="glass card">
+            <h3>4. Launch & Optimise</h3>
+            <p>We deploy, monitor, and iterate—tracking analytics, refining content, and supporting your team post-launch.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <header class="section-header">
+          <p class="section-label">In their words</p>
+          <h2 class="section-title">Teams who ship with Revelans IT</h2>
+          <p class="section-subtitle">We become an extension of your product and marketing teams, ready to untangle complexity and ship high-impact work.</p>
+        </header>
+        <div class="grid-2 testimonials">
+          <blockquote class="glass card testimonial">
+            <p>“Revelans IT transformed our outdated site into a lead machine. Conversions doubled within weeks of launch.”</p>
+            <cite>— Eva Willems, Marketing Lead at Northwave Security</cite>
+          </blockquote>
+          <blockquote class="glass card testimonial">
+            <p>“Their attention to accessibility and speed is unmatched. We finally have a site that reflects our product quality.”</p>
+            <cite>— Jonas de Vries, Founder at Atlas Fintech</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="section cta glass card">
+        <h2 class="section-title">Ready to build something remarkable?</h2>
+        <p class="section-subtitle">Tell us about your goals and we’ll craft a roadmap that gets you there faster.</p>
+        <p class="actions">
+          <a class="button" href="contact.html">Book a call</a>
+          <a class="link" href="services.html">Explore services</a>
+        </p>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container">
-        <p>© <span id="year"></span> Revelans IT. All rights reserved.</p>
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="logo" href="index.html">Revelans IT</a>
+            <p>Web design studio crafting fast, accessible, conversion-focused experiences.</p>
+          </div>
+          <div>
+            <p class="footer-heading">Follow</p>
+            <ul class="social-links">
+              <li>
+                <a href="https://www.instagram.com/revelansit" target="_blank" rel="noopener noreferrer">
+                  Instagram <span>@revelansit</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/company/revelans-it" target="_blank" rel="noopener noreferrer">
+                  LinkedIn <span>Revelans IT</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-actions">
+            <button class="button-outline back-to-top" type="button" aria-label="Back to top">Back to top</button>
+          </div>
+        </div>
+        <div class="footer-meta">
+          <p>© <span id="year"></span> Revelans IT. All rights reserved.</p>
+          <p class="design-credit">Designed By Revelans IT</p>
+        </div>
       </div>
     </footer>
 
     <script src="assets/js/main.js"></script>
   </body>
-  </html>
+</html>
