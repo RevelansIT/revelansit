@@ -41,8 +41,8 @@ body{
 .section.cta .actions{justify-content:center}
 
 /* Header */
-.site-header{position:sticky; top:0; z-index:10; backdrop-filter:saturate(180%) blur(8px); background:linear-gradient(180deg, rgba(10,12,20,.8), rgba(10,12,20,.5) 60%, transparent)}
-.site-header .container{display:flex; align-items:center; gap:16px; padding:18px 0}
+.site-header{position:sticky; top:0; z-index:10; backdrop-filter:saturate(180%) blur(8px); background:linear-gradient(180deg, rgba(10,12,20,.8), rgba(10,12,20,.5) 60%, transparent); margin-bottom:clamp(56px, 8vw, 120px)}
+.site-header .container{display:flex; align-items:center; gap:16px; padding:18px clamp(14px, 4vw, 42px); margin:0; width:100%}
 .logo{font-weight:800; letter-spacing:.4px; text-decoration:none; color:var(--text)}
 .site-nav{margin-left:auto; display:flex; gap:18px; align-items:center}
 .site-nav a{color:var(--muted); text-decoration:none; padding:8px 10px; border-radius:10px; transition:all .25s ease}
