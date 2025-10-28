@@ -94,6 +94,24 @@ main.container{padding-top:clamp(28px, 5vw, 72px)}
 /* Buttons */
 .button{display:inline-block; padding:10px 16px; border-radius:12px; color:#061018; background: linear-gradient(135deg, var(--brand-1), var(--brand-2)); text-decoration:none; font-weight:700; box-shadow: var(--shadow); border:0}
 .button:hover{filter:brightness(1.05)}
+.button:focus-visible, .button-secondary:focus-visible{
+  outline:2px solid var(--accent);
+  outline-offset:3px;
+}
+.button-secondary{
+  color:var(--text);
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.22);
+  box-shadow:var(--shadow);
+  transition:all .25s ease;
+  backdrop-filter:blur(10px);
+}
+.button-secondary:hover{
+  color:var(--accent);
+  border-color:rgba(255,255,255,.45);
+  background:rgba(255,255,255,.12);
+  filter:none;
+}
 .link{color:var(--accent); text-decoration:none}
 .link:hover{text-decoration:underline}
 
