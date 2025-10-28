@@ -123,6 +123,10 @@ main.container{padding-top:clamp(28px, 5vw, 72px)}
 .service-card p{margin:0; color:var(--muted)}
 .service-icon{width:56px; height:56px; border-radius:16px; display:inline-flex; align-items:center; justify-content:center; background:linear-gradient(135deg, rgba(110,231,255,.18), rgba(124,58,237,.18)); border:1px solid rgba(255,255,255,.18); color:var(--accent); box-shadow:0 12px 28px rgba(0,0,0,.35)}
 .service-icon svg{width:28px; height:28px; fill:currentColor}
+.services-overview .section-header{align-items:center; text-align:center; margin-inline:auto}
+.services-overview .section-subtitle{max-width:560px}
+.services-overview .grid-3{justify-items:center}
+.services-overview .service-card{text-align:center; align-items:center}
 .portfolio-grid .thumb{height:160px; border-radius:12px; background: linear-gradient(135deg, rgba(34,211,238,.2), rgba(124,58,237,.2));}
 .tile{padding:14px}
 
