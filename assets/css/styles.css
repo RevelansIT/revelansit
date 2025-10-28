@@ -66,15 +66,15 @@ body{
 main.container{padding-top:clamp(28px, 5vw, 72px)}
 
 /* Hero */
-.hero{padding:96px 0 56px; text-align:left}
+.hero{padding:96px 0 56px; text-align:center}
 .hero.gradient-animated{
-  width:min(100%, 1080px);
-  margin:0 auto 0 0;
+  width:min(100%, 880px);
+  margin:0 auto;
   padding: clamp(48px, 7vw, 80px) clamp(32px, 6vw, 72px);
 }
 .hero h1{font-size: clamp(34px, 6vw, 64px); line-height:1.06; margin:0 0 12px; letter-spacing:-.02em}
 .hero p{font-size: clamp(16px, 2.2vw, 20px); color:var(--muted); margin:0 0 22px}
-.hero .actions{display:flex; gap:14px; flex-wrap:wrap}
+.hero .actions{display:flex; gap:14px; flex-wrap:wrap; justify-content:center}
 .gradient-animated{
   position:relative;
   border-radius: var(--radius);
@@ -118,14 +118,15 @@ main.container{padding-top:clamp(28px, 5vw, 72px)}
 /* Layout helpers */
 .grid-3{display:grid; gap:18px; grid-template-columns:repeat(3, 1fr)}
 .service-cards{align-items:stretch}
-.service-card{display:flex; flex-direction:column; gap:18px}
+.service-card{display:flex; flex-direction:column; gap:18px; max-width:260px; padding:20px}
 .service-card h3{margin:0; font-size:20px}
 .service-card p{margin:0; color:var(--muted)}
-.service-icon{width:56px; height:56px; border-radius:16px; display:inline-flex; align-items:center; justify-content:center; background:linear-gradient(135deg, rgba(110,231,255,.18), rgba(124,58,237,.18)); border:1px solid rgba(255,255,255,.18); color:var(--accent); box-shadow:0 12px 28px rgba(0,0,0,.35)}
-.service-icon svg{width:28px; height:28px; fill:currentColor}
+.service-icon{width:44px; height:44px; border-radius:14px; display:inline-flex; align-items:center; justify-content:center; background:linear-gradient(135deg, rgba(110,231,255,.18), rgba(124,58,237,.18)); border:1px solid rgba(255,255,255,.18); color:var(--accent); box-shadow:0 12px 28px rgba(0,0,0,.3)}
+.service-icon svg{width:22px; height:22px; fill:currentColor}
+.services-overview{max-width:880px; margin-inline:auto}
 .services-overview .section-header{align-items:center; text-align:center; margin-inline:auto}
-.services-overview .section-subtitle{max-width:560px}
-.services-overview .grid-3{justify-items:center}
+.services-overview .section-subtitle{max-width:520px}
+.services-overview .grid-3{justify-content:center; justify-items:center; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:22px}
 .services-overview .service-card{text-align:center; align-items:center}
 .portfolio-grid .thumb{height:160px; border-radius:12px; background: linear-gradient(135deg, rgba(34,211,238,.2), rgba(124,58,237,.2));}
 .tile{padding:14px}
