@@ -10,7 +10,7 @@
       <div class="container">
         <a class="logo" href="<?php echo esc_url(home_url('/')); ?>">Revelans IT</a>
         <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
-        <nav id="primary-nav" class="site-nav" aria-label="Primary">
+        <nav id="primary-nav" class="site-nav" aria-label="<?php esc_attr_e('Hoofdmenu', 'revelansit'); ?>">
           <?php wp_nav_menu(['theme_location' => 'primary', 'container' => false, 'items_wrap' => '%3$s']); ?>
         </nav>
       </div>

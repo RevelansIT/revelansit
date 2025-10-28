@@ -7,7 +7,7 @@
       </div>
     </article>
   <?php endwhile; else: ?>
-    <p><?php _e('Sorry, no content found.', 'revelansit'); ?></p>
+    <p><?php _e('Geen inhoud gevonden.', 'revelansit'); ?></p>
   <?php endif; ?>
 <?php get_footer(); ?>
 
