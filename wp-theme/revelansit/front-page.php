@@ -8,12 +8,17 @@ $services_url  = $services_page ? get_permalink($services_page) : home_url('/die
 ?>
 
 <section class="hero gradient-animated">
-  <h1><?php bloginfo('name'); ?> — Websites die indruk maken en presteren</h1>
-  <p>Revelans IT creëert visueel sterke, toegankelijke en SEO-klare websites die bezoekers omzetten in klanten.</p>
-  <p class="actions">
-    <a class="button" href="<?php echo esc_url($about_url); ?>">Lees meer over Revelans</a>
-    <a class="button button-secondary" href="<?php echo esc_url($services_url); ?>">Bekijk onze diensten</a>
-  </p>
+  <div class="hero-content">
+    <h1><?php bloginfo('name'); ?> — Websites die indruk maken en presteren</h1>
+    <p>Revelans IT creëert visueel sterke, toegankelijke en SEO-klare websites die bezoekers omzetten in klanten.</p>
+    <div class="actions">
+      <a class="button" href="<?php echo esc_url($about_url); ?>">Lees meer over Revelans</a>
+      <a class="button button-secondary" href="<?php echo esc_url($services_url); ?>">Bekijk onze diensten</a>
+    </div>
+  </div>
+  <figure class="hero-visual">
+    <img src="<?php echo esc_url(get_theme_file_uri('assets/img/hero-placeholder.svg')); ?>" alt="Voorbeeld van een modern webdesignproject" />
+  </figure>
 </section>
 
 <section class="features grid-3">

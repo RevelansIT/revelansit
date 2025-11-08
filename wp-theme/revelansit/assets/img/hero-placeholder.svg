@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" role="img" aria-labelledby="title desc">
+  <title id="title">Voorbeeldafbeelding van een modern webdesign</title>
+  <desc id="desc">Geometrische vormen en kleurovergangen als tijdelijke stockafbeelding.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="50%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#9333ea"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.18)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.02)"/>
+    </linearGradient>
+    <filter id="blur" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="40"/>
+    </filter>
+  </defs>
+  <rect fill="#0f172a" width="960" height="720" rx="40"/>
+  <g opacity="0.55" filter="url(#blur)">
+    <circle cx="820" cy="160" r="220" fill="#38bdf8"/>
+    <circle cx="180" cy="580" r="240" fill="#a855f7"/>
+    <circle cx="600" cy="520" r="200" fill="#22d3ee"/>
+  </g>
+  <rect x="60" y="60" width="840" height="600" rx="32" fill="url(#bg)"/>
+  <g opacity="0.35">
+    <path d="M120 180h720v360H120z" fill="url(#accent)"/>
+    <path d="M240 260h200v160H240z" fill="rgba(255,255,255,0.32)"/>
+    <path d="M480 260h320v40H480z" fill="rgba(255,255,255,0.45)"/>
+    <path d="M480 340h220v40H480z" fill="rgba(255,255,255,0.28)"/>
+    <path d="M480 420h260v40H480z" fill="rgba(255,255,255,0.2)"/>
+  </g>
+  <g fill="#e2e8f0">
+    <rect x="240" y="440" width="200" height="16" rx="8" opacity="0.7"/>
+    <rect x="240" y="470" width="160" height="16" rx="8" opacity="0.45"/>
+    <circle cx="200" cy="456" r="32" opacity="0.8"/>
+  </g>
+</svg>
