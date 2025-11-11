@@ -1,10 +1,53 @@
     </main>
     <footer class="site-footer">
       <div class="container">
-        <p>© <?php echo date('Y'); ?> Revelans IT. All rights reserved.</p>
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="logo" href="<?php echo esc_url(home_url('/')); ?>">Revelans IT</a>
+            <p>Webdesignstudio die snelle, toegankelijke en conversiegerichte ervaringen creëert.</p>
+          </div>
+          <div>
+            <p class="footer-heading"><?php esc_html_e('Volg ons', 'revelansit'); ?></p>
+            <ul class="social-links">
+              <li>
+                <a href="https://www.instagram.com/revelansit" target="_blank" rel="noopener noreferrer">
+                  <span class="social-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M12 7.2a4.8 4.8 0 104.8 4.8A4.81 4.81 0 0012 7.2zm0 7.6a2.8 2.8 0 112.8-2.8A2.81 2.81 0 0112 14.8zM18.5 6.9a1.12 1.12 0 11-1.12-1.12 1.12 1.12 0 011.12 1.12z"></path>
+                      <path d="M12 2.4c3.22 0 3.6.01 4.87.07 1.17.05 1.8.24 2.22.4a3.3 3.3 0 011.19.77 3.3 3.3 0 01.77 1.19c.16.42.35 1.05.4 2.22.06 1.27.07 1.65.07 4.87s-.01 3.6-.07 4.87c-.05 1.17-.24 1.8-.4 2.22a3.3 3.3 0 01-.77 1.19 3.3 3.3 0 01-1.19.77c-.42.16-1.05.35-2.22.4-1.27.06-1.65.07-4.87.07s-3.6-.01-4.87-.07c-1.17-.05-1.8-.24-2.22-.4a3.3 3.3 0 01-1.19-.77 3.3 3.3 0 01-.77-1.19c-.16-.42-.35-1.05-.4-2.22C2.41 15.6 2.4 15.22 2.4 12s.01-3.6.07-4.87c.05-1.17.24-1.8.4-2.22a3.3 3.3 0 01.77-1.19 3.3 3.3 0 011.19-.77c.42-.16 1.05-.35 2.22-.4C8.4 2.41 8.78 2.4 12 2.4m0-1.4c-3.28 0-3.69.01-4.99.07-1.29.06-2.17.27-2.93.58a4.7 4.7 0 00-1.71 1.12 4.7 4.7 0 00-1.12 1.71c-.31.76-.52 1.64-.58 2.93C1.01 9.11 1 9.52 1 12s.01 2.89.07 4.19c.06 1.29.27 2.17.58 2.93a4.7 4.7 0 001.12 1.71 4.7 4.7 0 001.71 1.12c.76.31 1.64.52 2.93.58 1.3.06 1.71.07 4.99.07s3.69-.01 4.99-.07c1.29-.06 2.17-.27 2.93-.58a4.7 4.7 0 001.71-1.12 4.7 4.7 0 001.12-1.71c.31-.76.52-1.64.58-2.93.06-1.3.07-1.71.07-4.99s-.01-3.69-.07-4.99c-.06-1.29-.27-2.17-.58-2.93a4.7 4.7 0 00-1.12-1.71 4.7 4.7 0 00-1.71-1.12c-.76-.31-1.64-.52-2.93-.58C15.69 1.01 15.28 1 12 1z"></path>
+                    </svg>
+                  </span>
+                  <span class="social-label">
+                    <span class="social-name">Instagram</span>
+                    <span class="social-handle">@revelansit</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/company/revelans-it" target="_blank" rel="noopener noreferrer">
+                  <span class="social-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 8.75h3.96V21H3zM9.24 8.75H13v1.66h.05c.52-.98 1.76-2.02 3.63-2.02 3.88 0 4.6 2.55 4.6 5.88V21h-3.96v-5.64c0-1.36-.03-3.1-1.89-3.1-1.9 0-2.19 1.48-2.19 3v5.74H9.24z"></path>
+                    </svg>
+                  </span>
+                  <span class="social-label">
+                    <span class="social-name">LinkedIn</span>
+                    <span class="social-handle">Revelans IT</span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-actions">
+            <button class="button-outline back-to-top" type="button" aria-label="<?php esc_attr_e('Terug naar boven', 'revelansit'); ?>"><?php esc_html_e('Naar boven', 'revelansit'); ?></button>
+          </div>
+        </div>
+        <div class="footer-meta">
+          <p>© <span id="year"></span> Revelans IT. <?php esc_html_e('Alle rechten voorbehouden.', 'revelansit'); ?></p>
+          <p class="design-credit"><?php esc_html_e('Ontworpen door Revelans IT', 'revelansit'); ?></p>
+        </div>
       </div>
     </footer>
     <?php wp_footer(); ?>
   </body>
-  </html>
-
+</html>
